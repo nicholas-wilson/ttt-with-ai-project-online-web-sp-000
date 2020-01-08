@@ -19,6 +19,9 @@ class Players::Computer < Player
     elsif one_off_win?(board)
       spot = one_off_win?(board)
       board.update(spot, self)
+    else
+      choices = open_spots(board)
+      board.update(choices[rand(choices.size - 1)], self)
     end
   end
 
