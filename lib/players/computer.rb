@@ -3,7 +3,7 @@ class Players::Computer < Player
 
   def move(board)
     if board.turn_count == 0 || board.turn_count == 1
-      if self.open_spots?(board).include?(5)
+      if self.open_spots(board).include?(5)
         board.update(5, self)
       end
     elsif one_off_win?(board)
