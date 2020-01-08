@@ -17,6 +17,7 @@ class Players::Computer < Player
       if board.cells[index] == " "
         spots << (index + 1)
       end
+      index += 1
     end
   end
 end
