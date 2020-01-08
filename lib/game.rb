@@ -69,5 +69,6 @@ class Game
       input = gets.chomp
     end
       @board.update(input, self.current_player)
+      input
   end
 end
