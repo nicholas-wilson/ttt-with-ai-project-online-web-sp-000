@@ -76,14 +76,20 @@ class Game
       self.turn
     end
     if winner == "X"
+      puts "Turn: #{@board.turn_count}"
+      @board.display
       puts "Congratulations X!"
-      @board.display
+      
     elsif winner == "O"
+      puts "Turn: #{@board.turn_count}"
+      @board.display
       puts "Congratulations O!"
-      @board.display
+      
     else
-      puts "Cat's Game!"
+      puts "Turn: #{@board.turn_count}"
       @board.display
+      puts "Cat's Game!"
+      
     end
   end
 end
