@@ -7,6 +7,8 @@ class Players::Computer < Player
         board.update(5, self)
       end
     elsif one_off_win?(board)
+      spot = one_off_win?(board)
+      board.update(spot, self)
     end
   end
 
