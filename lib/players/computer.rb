@@ -1,7 +1,7 @@
 class Players::Computer < Player
   attr_accessor :marker
 
-  def move
-
+  def move(spot)
+    spot
   end
 end
