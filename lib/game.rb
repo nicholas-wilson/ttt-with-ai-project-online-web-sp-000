@@ -73,5 +73,12 @@ class Game
     until self.over?
       self.turn
     end
+    if winner == "X"
+      puts "Congratulations X!"
+    elsif winner == "O"
+      puts "Congratulations O!"
+    else
+      puts "Cat's Game!"
+    end
   end
 end
