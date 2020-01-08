@@ -71,7 +71,7 @@ class Game
 
   def play
     until self.over?
-      puts "#{@board.turn_count + 1}"
+      puts "Turn: #{@board.turn_count + 1}"
       @board.display
       self.turn
     end
