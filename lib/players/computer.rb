@@ -16,7 +16,7 @@ class Players::Computer < Player
       if self.open_spots(board).include?(5)
         "5"
       end
-    elsif one_off_win?(board)
+    elsif one_off_win?(board) && open_spots.include?(one_off_win?(board))
       spot = one_off_win?(board)
       spot.to_s
     else
