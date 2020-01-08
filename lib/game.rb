@@ -68,4 +68,10 @@ class Game
     end
       @board.update(input, self.current_player)
   end
+
+  def play
+    until self.over?
+      self.turn
+    end
+  end
 end
