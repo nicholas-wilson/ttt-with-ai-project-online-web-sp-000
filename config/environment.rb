@@ -12,3 +12,10 @@ end
 the_game = nil
 if input == "0"
   the_game = Game.new(Players::Computer("X"), Players::Computer("O"))
+elsif input == "1"
+  the_game = Game.new(Players::Human("X"), Players::Computer("O"))
+else
+  the_game = Game.new
+end
+
+the_game.play
