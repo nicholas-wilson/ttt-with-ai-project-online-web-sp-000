@@ -43,5 +43,6 @@ class Players::Computer < Player
         one_off = combo.index(" ") + 1
       end
     end
+    one_off
   end
 end
