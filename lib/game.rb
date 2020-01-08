@@ -76,10 +76,13 @@ class Game
     end
     if winner == "X"
       puts "Congratulations X!"
+      @board.display
     elsif winner == "O"
       puts "Congratulations O!"
+      @board.display
     else
       puts "Cat's Game!"
+      @board.display
     end
   end
 end
