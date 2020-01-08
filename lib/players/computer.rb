@@ -14,14 +14,14 @@ class Players::Computer < Player
   def move(board)
     if board.turn_count == 0 || board.turn_count == 1
       if self.open_spots(board).include?(5)
-        board.update(5, self)
+        5
       end
     elsif one_off_win?(board)
       spot = one_off_win?(board)
-      board.update(spot, self)
+      spot
     else
       choices = open_spots(board)
-      board.update(choices[rand(choices.size - 1)], self)
+      choices[rand(choices.size - 1)]
     end
   end
 
