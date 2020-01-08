@@ -71,6 +71,7 @@ class Game
 
   def play
     until self.over?
+      @board.display
       self.turn
     end
     if winner == "X"
