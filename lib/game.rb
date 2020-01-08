@@ -62,11 +62,9 @@ class Game
   end
 
   def turn
-    puts "Enter a number 1-9."
-    input = gets.chomp
+    input = self.current_player.move
     unless @board.valid_move?(input)
-      puts "Enter a number 1-9."
-      input = gets.chomp
+      input = self.current_player.move
     end
       @board.update(input, self.current_player)
   end
