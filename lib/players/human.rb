@@ -1,5 +1,5 @@
 class Players::Human < Player
-  def move
+  def move(input)
     puts "Enter a number 1-9."
     input = gets.chomp
     input
