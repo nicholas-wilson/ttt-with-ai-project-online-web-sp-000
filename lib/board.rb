@@ -40,8 +40,7 @@ class Board
   end
 
   def taken?(input_from_user)
-    pos_number = self.input_to_index(input_from_user)
-    if @cells[pos_number] == " "
+    if self.position(input_from_user) == " "
       false
     else
       true
