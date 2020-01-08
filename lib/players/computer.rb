@@ -40,7 +40,7 @@ class Players::Computer < Player
     WIN_COMBINATIONS.each do |win|
       combo = win.collect { |i| board.cells[i]}
       if combo.one?(" ")
-        one_off = combo.index_of(" ")
+        one_off = combo.index(" ") + 1
       end
     end
   end
