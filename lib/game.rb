@@ -79,17 +79,17 @@ class Game
       puts "Turn: #{@board.turn_count}"
       @board.display
       puts "Congratulations X!"
-      
+
     elsif winner == "O"
       puts "Turn: #{@board.turn_count}"
       @board.display
       puts "Congratulations O!"
-      
+
     else
       puts "Turn: #{@board.turn_count}"
       @board.display
       puts "Cat's Game!"
-      
+
     end
   end
 end
