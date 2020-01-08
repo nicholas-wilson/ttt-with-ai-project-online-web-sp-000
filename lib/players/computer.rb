@@ -3,10 +3,10 @@ class Players::Computer < Player
 
   def move(board)
     if board.turn_count == 0 || board.turn_count == 1
-      if board.valid_move?(5)
+      if self.open_spots?(board).include?(5)
         board.update(5, self)
       end
-    elsif
+    elsif one_off_win?(board)
     end
   end
 
@@ -19,5 +19,10 @@ class Players::Computer < Player
       end
       index += 1
     end
+  end
+
+  def one_off_win?(board)
+    one_off = false
+
   end
 end
