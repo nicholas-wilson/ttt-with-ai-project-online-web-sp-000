@@ -11,9 +11,9 @@ until input == "0" || input == "1" || input == "2"
 end
 the_game = nil
 if input == "0"
-  the_game = Game.new(Players::Computer("X"), Players::Computer("O"))
+  the_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
 elsif input == "1"
-  the_game = Game.new(Players::Human("X"), Players::Computer("O"))
+  the_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"))
 else
   the_game = Game.new
 end
