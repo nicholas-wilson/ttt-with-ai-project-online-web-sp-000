@@ -1,7 +1,9 @@
 class Players::Computer < Player
   attr_accessor :marker
 
-  def move(spot)
-    spot
+  def move(board)
+    if board.turn_count == 0 || board.turn_count == 1
+      if board.valid_move?(5)
+        board.update(5, self)
   end
 end
