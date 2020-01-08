@@ -21,6 +21,7 @@ class Players::Computer < Player
       end
       index += 1
     end
+    spots
   end
 
   def one_off_win?(board)
