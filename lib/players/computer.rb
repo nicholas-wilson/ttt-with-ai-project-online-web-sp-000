@@ -1,4 +1,4 @@
-class Computer
+class Players::Computer
   attr_accessor :marker
 
 
