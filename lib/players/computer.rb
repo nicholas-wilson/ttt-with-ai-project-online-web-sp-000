@@ -6,6 +6,17 @@ class Players::Computer < Player
       if board.valid_move?(5)
         board.update(5, self)
       end
+    elsif
+    end
+  end
+
+  def open_spots(board)
+    spots = []
+    index = 0
+    9.times do
+      if board.cells[index] == " "
+        spots << (index + 1)
+      end
     end
   end
 end
