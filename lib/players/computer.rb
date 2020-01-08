@@ -36,6 +36,12 @@ class Players::Computer < Player
 
   def one_off_win?(board)
     one_off = false
-    if
+    combo = []
+    WIN_COMBINATIONS.each do |win|
+      combo = win.collect { |i| board.cells[i]}
+      if combo.one?(" ")
+        one_off = combo.index_of(" ")
+      end
+    end
   end
 end
